@@ -14,12 +14,13 @@ function solveEquation(a, b, c) {
 
 	return arr;
 }
+
 "use strict"
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 	let p = percent / 100 / 12;
 	let s = amount - contribution;
-	monthPay = s * (p + (p / (((1 + p) ** countMonths) - 1)));
-	totalMortgage = (monthPay * countMonths).toFixed(2);
+	let monthPay = s * (p + (p / (((1 + p) ** countMonths) - 1)));
+	let totalMortgage = (monthPay * countMonths).toFixed(2);
 	return parseFloat(totalMortgage);
 
 }
