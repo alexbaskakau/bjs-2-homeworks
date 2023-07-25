@@ -14,7 +14,7 @@ function solveEquation(a, b, c) {
 
 	return arr;
 }
-
+"use strict"
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 	let p = percent / 100 / 12;
 	let s = amount - contribution;
