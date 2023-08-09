@@ -13,7 +13,7 @@ function Student(name, gender, age) {
 		this.marks.push(...marksToAdd);
 	}
 	this.getAverage = function() {
-		if (!this.marks.length || !this.marks) {
+		if (!this.marks || !this.marks.length) {
 			return 0;
 		}
 		const sum = this.marks.reduce((acc, mark) => acc + mark);
