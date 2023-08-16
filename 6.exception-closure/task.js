@@ -24,14 +24,11 @@ class Triangle {
 		this.c = c;
 	}
 	get perimeter() {
-		return (this.a + this.b + this.c);
+		return this.a + this.b + this.c;
 	}
 	get area() {
-		this.a = a;
-		this.b = b;
-		this.c = c;
-		let p = (a + b + c) / 2;
-		return parseFloat(Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(3));
+        const p = (this.a + this.b + this.c)/2;
+        return parseFloat(Math.sqrt(p*(p-this.a)*(p-this.b)*(p-this.c)).toFixed(3));
 	}
 }
 
